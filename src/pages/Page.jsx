@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { device } from "../device/device";
 
 const Page = styled.div`
-  margin: auto;
+  width: 100vw;
+  /* margin: auto; */
   font-family: "sans-serif";
   @media ${device.mobileS} {
     min-width: 320px;
