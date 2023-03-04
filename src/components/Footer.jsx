@@ -47,7 +47,10 @@ const StyleFooter = styled.footer`
   width: 100vw;
   background-color: #0e1133;
   padding: 2.5rem 2rem;
-  margin-top: 20rem;
+  /* margin-top: 20rem; */
+  @media screen and (max-width: 868px) {
+    padding: 0.4rem;
+  }
 `;
 const Blcoks = styled.div`
   @media screen and (max-width:910px) {

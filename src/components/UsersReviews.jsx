@@ -51,6 +51,7 @@ const SecondContainer = styled.div`
   }
 `;
 const Container = styled.div`
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,6 +60,9 @@ const Container = styled.div`
   margin-top: 10rem;
   @media screen and (max-width: 830px) {
     flex-wrap: wrap;
+  }
+  @media screen and (max-width: 868px) {
+    padding: 0.4rem;
   }
 `;
 const ReviewsContainer = styled.div`

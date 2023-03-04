@@ -16,7 +16,7 @@ export const SimpleSlider = () => {
         </TextStyled>
       </div>
       <SliderCintainer>
-        <Corusel infinite autoPlay autoPlayInterval={3000}>
+        <Corusel autoWidth infinite autoPlay autoPlayInterval={3000}>
           <ImgStyled src={first} alt="phone" />
           <ImgStyled src={second} alt="phone" />
           <ImgStyled src={third} alt="phone" />
@@ -26,22 +26,30 @@ export const SimpleSlider = () => {
   );
 };
 const Corusel = styled(AliceCarousel)`
-    display: flex;
-    justify-content: center;
-`
-const SliderCintainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+`;
+const SliderCintainer = styled.div`
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 const Container = styled.div`
+padding: 2.5rem 2rem;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 868px) {
+    padding: 0.4rem;
+  }
 `;
 
 const TitleStyled = styled.h2`
-  /* width: 774px; */
   margin-top: 100px;
   font-style: normal;
   font-weight: 700;
@@ -55,7 +63,6 @@ const TitleStyled = styled.h2`
 `;
 
 const TextStyled = styled.p`
-  /* width: 624px; */
   margin-top: 24px;
   font-style: normal;
   font-weight: 400;
@@ -68,8 +75,11 @@ const TextStyled = styled.p`
   color: #505056;
 `;
 const ImgStyled = styled.img`
-  width: 450px;
-  height: 917.22px;
-  /* margin-left: 490px; */
+  max-width: 450px;
+  max-height: 917.22px;
   margin-top: 80px;
+  @media screen and (max-width: 868px) {
+    margin-left: 1rem;
+  }
 `;
+ 

@@ -4,15 +4,19 @@ import Main from "./components/Main";
 import UsersReviews from "./components/UsersReviews";
 import Page from "./pages/Page";
 import { SimpleSlider } from "./components/Slider";
+import Questions from "./components/Questions";
+import AboutUs from "./components/AboutUs";
 function App() {
   return (
     <>
       <Page>
         <Header />
-        <Main />
+         <Main />
         <SimpleSlider />
         <UsersReviews />
-        <Footer />
+        <Questions />
+        <AboutUs/>
+        <Footer /> 
       </Page>
     </>
   );

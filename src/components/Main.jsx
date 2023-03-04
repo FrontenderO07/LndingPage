@@ -105,6 +105,9 @@ const Main = () => {
 export default Main;
 const BlockItem = styled.div`
   padding: 2.5rem 2rem;
+  @media screen and (max-width: 868px) {
+    padding: 0.4rem;
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
